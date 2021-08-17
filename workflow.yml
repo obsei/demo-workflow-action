@@ -1,0 +1,36 @@
+analyzer:
+  _target_: obsei.analyzer.classification_analyzer.ZeroShotClassificationAnalyzer
+  device: auto
+  model_name_or_path: typeform/mobilebert-uncased-mnli
+analyzer_config:
+  _target_: obsei.analyzer.classification_analyzer.ClassificationAnalyzerConfig
+  labels:
+  - patrol
+  - clean energy
+  - pricy
+  - positive outlook
+  - negative outlook
+  multi_class_classification: true
+  use_splitter_and_aggregator: true
+  splitter_config:
+    _target_: obsei.preprocessor.text_splitter.TextSplitterConfig
+    max_split_length: 300
+    split_stride: 10
+  aggregator_config:
+    _target_: obsei.postprocessor.inference_aggregator.InferenceAggregatorConfig
+    aggregate_function:
+      _target_: obsei.postprocessor.inference_aggregator_function.ClassificationMaxCategories
+      score_threshold: 0.4
+sink:
+  _target_: obsei.sink.slack_sink.SlackSink
+sink_config:
+  _target_: obsei.sink.slack_sink.SlackSinkConfig
+  channel_id: C01TUPZ23NZ
+source:
+  _target_: obsei.source.google_news_source.GoogleNewsSource
+source_config:
+  _target_: obsei.source.google_news_source.GoogleNewsConfig
+  fetch_article: true
+  lookup_period: 1d
+  max_results: '3'
+  query: ola electric
