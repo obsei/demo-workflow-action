@@ -25,7 +25,6 @@ sink:
   _target_: obsei.sink.slack_sink.SlackSink
 sink_config:
   _target_: obsei.sink.slack_sink.SlackSinkConfig
-  channel_id: C01TUPZ23NZ
 source:
   _target_: obsei.source.google_news_source.GoogleNewsSource
 source_config:
