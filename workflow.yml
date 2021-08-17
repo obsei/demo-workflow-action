@@ -19,7 +19,7 @@ analyzer_config:
   aggregator_config:
     _target_: obsei.postprocessor.inference_aggregator.InferenceAggregatorConfig
     aggregate_function:
-      _target_: obsei.postprocessor.inference_aggregator_function.ClassificationMaxCategories
+      _target_: obsei.postprocessor.inference_aggregator_function.ClassificationAverageScore
       score_threshold: 0.4
 sink:
   _target_: obsei.sink.slack_sink.SlackSink
