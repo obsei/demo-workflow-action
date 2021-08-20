@@ -1,5 +1,5 @@
-# Obsei Workflow Execution via GitHub Action
-This repo Showcase Obsei workflow execution via GitHub actions. 
+# [Obsei](https://github.com/obsei/obsei) Workflow Execution via GitHub Action
+This repo Showcase [Obsei](https://github.com/obsei/obsei) workflow execution via GitHub actions. 
 We have created this for [DataTalk.Club's](https://datatalks.club/) demo.
 
 This repo represent following workflow - 
@@ -24,6 +24,6 @@ Screenshot of final result -
 - [Optional] Update [workflow.py](https://github.com/obsei/demo-workflow-action/blob/main/workflow.py) if you would like to add some custom code
 - Add required credentials in the secret to prevent their exposure to public
 - Update github [action.yml](https://github.com/obsei/demo-workflow-action/blob/main/.github/workflows/action.yml) along with required environment variables (For example scheduling at regular time or based on some event refer [link](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#on) for more detail)
-- Spread Obsei love with the world :)
+- Spread [Obsei](https://github.com/obsei/obsei) love with the world :)
 
 
