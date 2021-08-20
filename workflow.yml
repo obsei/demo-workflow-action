@@ -5,7 +5,7 @@ analyzer:
 analyzer_config:
   _target_: obsei.analyzer.classification_analyzer.ClassificationAnalyzerConfig
   labels:
-  - patrol
+  - petrol
   - clean energy
   - pricy
   - positive outlook
