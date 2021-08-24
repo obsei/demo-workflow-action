@@ -1,6 +1,6 @@
 # [Obsei](https://github.com/obsei/obsei) Workflow Execution via GitHub Action
 This repo Showcase [Obsei](https://github.com/obsei/obsei) workflow execution via GitHub actions. 
-We have created this for [DataTalk.Club's](https://datatalks.club/) demo.
+We have created this for [DataTalks.Club's](https://datatalks.club/) demo.
 
 This repo represent following workflow - 
 ![image](https://user-images.githubusercontent.com/19303690/130244375-693e0ea2-7d71-4a07-87da-e8dc3332885f.png)
@@ -20,10 +20,10 @@ Screenshot of final result -
 
 # How to use it?
 - Fork this repo
-- Update [workflow.yml](https://github.com/obsei/demo-workflow-action/blob/main/workflow.yml) based on your need (**Note**: Never add you credentials in it, instead use [github secret](https://docs.github.com/en/actions/reference/encrypted-secrets))
+- Update [workflow.yml](https://github.com/obsei/demo-workflow-action/blob/main/workflow.yml) based on your need (**Note**: Never add you credentials in yml file, instead use environment variable and fetch them via [github secret](https://docs.github.com/en/actions/reference/encrypted-secrets))
 - [Optional] Update [workflow.py](https://github.com/obsei/demo-workflow-action/blob/main/workflow.py) if you would like to add some custom code
 - Add required credentials in the secret to prevent their exposure to public
 - Update github [action.yml](https://github.com/obsei/demo-workflow-action/blob/main/.github/workflows/action.yml) along with required environment variables (For example scheduling at regular time or based on some event refer [link](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#on) for more detail)
 - Spread [Obsei](https://github.com/obsei/obsei) love with the world :)
 
-
+This [link](https://github.com/obsei/obsei#how-to-use) might help you to regarding how collect credetials of observers (Facebook, Twitter etc) and informers (Slack, Zendesk etc).
