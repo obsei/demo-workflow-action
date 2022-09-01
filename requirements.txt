@@ -1,1 +1,1 @@
-git+git://github.com/obsei/obsei@master#egg=obsei
+git+git://github.com/obsei/obsei@master#egg=obsei[all]
